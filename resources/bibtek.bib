@@ -1,0 +1,66 @@
+@ARTICLE{2021TNSM,
+  author={D. {Bringhenti} and G. {Marchetto} and R. {Sisto} and S. {Spinoso} and F. {Valenza} and J. {Yusupov}},
+  journal={IEEE Transactions on Network and Service Management}, 
+  title={Improving the Formal Verification of Reachability Policies in Virtualized Networks}, 
+  year={2021},
+  volume={18},
+  number={1},
+  pages={713-728},
+  doi={10.1109/TNSM.2020.3045781},
+  url={https://iris.polito.it/retrieve/handle/11583/2859052/435762/TNSM2021.pdf},
+abstract={Network Function Virtualization (NFV) and Software Defined Networking (SDN) are new emerging paradigms that changed the rules of networking, shifting the focus on dynamicity and programmability. In this new scenario, a very important and challenging task is to detect anomalies in the data plane, especially with the aid of suitable automated software tools. In particular, this operation must be performed within quite strict times, due to the high dynamism introduced by virtualization. In this article, we propose a new network modeling approach that enhances the performance of formal verification of reachability policies, checked by solving a Satisfiability Modulo Theories (SMT) problem. This performance improvement is motivated by the definition of function models that do not work on single packets, but on packet classes. Nonetheless, the modeling approach is comprehensive not only of stateless functions, but also stateful functions such as NATs and firewalls. The implementation of the proposed approach achieves high scalability in complex networked systems consisting of several heterogeneous functions.},
+  keywords={Reachability Verification, Policy Verification,Security Function Modeling}, 
+  }
+  
+ @InProceedings{2020NOMS_VEREFOO,
+  author    = {Daniele Bringhenti and Guido Marchetto and Riccardo Sisto and Fulvio Valenza and Jalolliddin Yusupov},
+  booktitle = {Proceedings of the {IEEE/IFIP} Network Operations and Management Symposium ({NOMS} 2020)},
+  doi       = {10.1109/NOMS47738.2020.9110402},
+  pages     = {1--7},
+  publisher = {{IEEE}},
+  title     = {Automated optimal firewall orchestration and configuration in virtualized networks},
+  year      = {2020},
+  url       = {https://iris.polito.it/retrieve/handle/11583/2837546/426876/2020NOMS_VEREFOO_author.pdf},
+  abstract={Emerging technologies such as Software-Defined Networking and Network Functions Virtualization are making the definition and configuration of network services more dynamic, thus making automatic approaches that can replace manual and error-prone tasks more feasible. In view of these considerations, this paper proposes a novel methodology to automatically compute the optimal allocation scheme and configuration of virtual firewalls within a user-defined network service graph subject to a corresponding set of security requirements. The presented framework adopts a formal approach based on the solution of a weighted partial MaxSMT problem, which also provides good confidence about the solution correctness. A prototype implementation of the proposed approach based on the z3 solver has been used for validation, showing the feasibility of the approach for problem instances requiring tens of virtual firewalls and similar numbers of security requirements. © 2020 IEEE.},
+    keywords={Firewall,Policy Refinement,Security Automation},
+
+}
+
+@InProceedings{2020NetSoft,
+author={Bringhenti, D. and Marchetto, G. and Sisto, R. and Valenza, F. and Yusupov, J.},
+title={Introducing programmability and automation in the synthesis of virtual firewall rules},
+journal={Proceedings of the 6th {IEEE} Conference on Network Softwarization (NetSoft 2020)},
+year={2020},
+pages={473-478},
+doi={10.1109/NetSoft48620.2020.9165434},
+url={https://iris.polito.it/retrieve/handle/11583/2844332/391324/main.pdf},
+abstract={The rise of new forms of cyber-threats is mostly due to the extensive use of virtualization paradigms and the increasing adoption of automation in the software life-cycle. To address these challenges we propose an innovative framework that leverages the intrinsic programmability of the cloud and software-defined infrastructures to improve the effectiveness and efficiency of reaction mechanisms. In this paper, we present our contributions with a demonstrative use case in the context of Kubernetes. By means of this framework, developers of cybersecurity appliances will not have any more to care about how to react to events or to struggle to define any possible security tasks at design time. In addition, automatic firewall ruleset generation provided by our framework will mostly avoid human intervention, hence decreasing the time to carry out them and the likelihood of errors. We focus our discussions on technical challenges: definition of common actions at the policy level and their translation into configurations for the heterogeneous set of security functions by means of a use case. © 2020 IEEE.},
+keywords={Firewall,Security Orchestration},
+}
+
+@InProceedings{2020CYSARM,
+author={Bringhenti, D. and Marchetto, G. and Sisto, R. and Valenza, F.},
+title={Short Paper: Automatic Configuration for an Optimal Channel Protection in Virtualized Networks},
+journal={Proceedings of the 2nd {AMC CCS} Workshop on Cyber-Security Arms Race (CYSARM 2020)},
+year={2020},
+pages={25-30},
+doi={10.1145/3411505.3418439},
+url={https://iris.polito.it/retrieve/handle/11583/2844334/426885/2020_CYSARM_author.pdf},
+abstract={Data confidentiality, integrity and authentication are security properties which are often enforced with the generation of secure channels, such as Virtual Private Networks, over unreliable network infrastructures. Traditionally, the configuration of the systems responsible of encryption operations is performed manually. However, the advent of software-based paradigms, such as Software-Defined Networking and Network Functions Virtualization, has introduced new arms races. In particular, even though network management has become more flexible, the increased complexity of virtual networks is making manual operations unfeasible and leading to errors which open the path to a large number of cyber attacks. A possible solution consists in reaching a trade-off between flexibility and complexity, by automatizing the configuration of the channel protection systems through policy refinement. In view of these considerations, this paper proposes a preliminary study for an innovative methodology to automatically allocate and configure channel protection systems in virtualized networks. The proposed approach would be based on the formulation of a MaxSMT problem and it would be the first to combine automation, formal verification and optimality in a single technique. © 2020 ACM.},
+keywords={VPN, Policy Refinement},
+}
+
+
+@InProceedings{2019ICCCS,
+  author    = {Daniele Bringhenti and Guido Marchetto and Riccardo Sisto and Fulvio Valenza and Jalolliddin Yusupov},
+  booktitle = {Proceedings of the 4th International Conference on Computing, Communications and Security ({ICCCS} 2019)},
+  doi       = {10.1109/CCCS.2019.8888130},
+  pages     = {1--7},
+  publisher = {{IEEE}},
+  title     = {Towards a fully automated and optimized network security functions orchestration},
+  year      = {2019},
+abstract={Automated policy-based network security management tools represent a new research frontier to be fully explored, so as to reduce the number of human errors due to a manual and suboptimal configuration of security services. Moreover, the agility that an automated tool would require can be provided by the most recent networking technologies, Network Functions Virtualization and Software-Defined Networking, which move the network management from the hardware level to the software. However, even though a Security Automation approach is nowadays feasible and would bring several benefits in facing cybersecurity attacks, pending problems are that currently only a limited number of automatic management tools have been developed and that they do not have a direct integration with cloud orchestrators, consequently requiring human interaction. Given these considerations, in this paper we propose a novel framework, whose goal is to automatically and optimally allocate and conFigure security functions in a virtualized network service in a formal and verified way, directly integrated in cloud orchestrators. We validated this contribution through an implementation that is able to cooperate with two well-known orchestrators, that are Open Baton and Kubernetes. © 2019 IEEE.},
+keywords={Security Orchestration},
+url       = {https://iris.polito.it/retrieve/handle/11583/2753692/313520/main-2.pdf},
+}
+
