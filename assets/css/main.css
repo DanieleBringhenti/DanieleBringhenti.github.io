@@ -1723,23 +1723,6 @@ input, select, textarea {
    padding: 0 15px;
 }
 
-.timeline-content h3 {
-   margin-top: 5px;
-   margin-bottom: 5px;
-   font-size: 25px;
-   font-weight: 500
-}
-
-.timeline-content span {
-   font-size: 19px;
-}
-
-.timeline-content p {
-   font-size: 17px;
-   line-height: 1.5em;
-   word-spacing: 1px;
-}
-
 
 @media screen and (max-width: 768px) {
    .timecontainer:before {
